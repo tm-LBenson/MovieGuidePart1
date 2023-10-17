@@ -1,2 +1,2 @@
-# MovieGuidePart1
-user-friendly interface for managing a movie list, allowing users to view, add, or delete movie titles with prompts and feedback based on provided screen samples
+# Movie List Manager
+This project is a simple movie list manager where users can view, add, and delete movie titles from a list. The interface is user-friendly, offering prompts and feedback as described in the project specification.
