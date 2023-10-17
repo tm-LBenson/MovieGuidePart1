@@ -17,6 +17,7 @@ def add_movie(movie_list):
     movie_title = input("Enter the movie title to add: ")
     movie_list.append(movie_title)
     print(f"'{movie_title}' has been added!")
+    display_movies(movie_list)
 
 def delete_movie(movie_list):
     """Deletes a movie from the list."""
@@ -26,13 +27,14 @@ def delete_movie(movie_list):
         if 1 <= movie_num <= len(movie_list):
             deleted_movie = movie_list.pop(movie_num - 1)
             print(f"'{deleted_movie}' has been deleted!")
+            display_movies(movie_list)
         else:
             print("Invalid number!")
     except ValueError:
         print("Please enter a valid number!")
 
 def main():
-    movie_list = ["Inception", "Interstellar", "The Matrix"]
+    movie_list = ["The Good, the Bad and the Ugly", "High Noon", "Unforgiven"]
     while True:
         display_menu()
         choice = input("Enter your choice: ")
